@@ -1,0 +1,189 @@
+/* ==========================================================================
+Header
+========================================================================== */
+
+#header-rnvi{
+	padding: 0 0 15px;
+	background: $color-main;
+	color: $color-font-white;
+	font-size: 90%;
+	border-bottom: 6px solid #fff;
+	#header{
+		@media ( min-width : 768px ) {
+			max-width: 1180px;
+			margin: auto;
+		}
+	}
+	@media ( min-width : 768px ) {
+		padding: 20px;
+		.nav-collapse{
+			ul {
+				border: none;
+				margin: 0;
+				padding: 0;
+				li a{
+					display: inline-block;
+					border: none;
+					width: 20% !important;
+					text-align: right;
+					float: right;
+					color: $color-font-white;
+					background: transparent;
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+	h1{
+		letter-spacing: 0.1em;
+		float: left;
+		font-weight: bold;
+		margin: 17px 0 0 15px;
+		@media ( min-width : 768px ) {
+			margin: 0;
+			font-weight: normal;
+			width: 25%;
+		}
+	}
+	.container{
+		padding: 0 !important;
+	}
+}
+
+.nav-toggle{
+	display: inline;
+	text-align: center;
+	float: right;
+	margin: 13px 10px 0 0;
+	@include icomoon;
+	color: $color-font-white;
+	&:before{
+		content: "\e600";
+		margin-right: 5px;
+		font-size: x-large;
+	}
+	&:hover{
+		color: red;
+	}
+	span{
+		display: none;
+	}
+}
+
+/*! responsive-nav.js 1.0.32 by @viljamis */
+
+.nav-collapse ul {
+  padding: 0 0 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  list-style: none;
+  border-top:1px solid #CA1D1D;
+  background: $color-main;
+}
+
+.nav-collapse li {
+  width: 100%;
+  a{
+  	display: block;
+  	border-bottom:1px solid #CA1D1D;
+  	padding:14px 20px;
+  	color: $color-font-white;
+  	&:hover{
+  		background:#CA1D1D;
+  	}
+  }
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+@media ( min-width : 768px ) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.header-rnvi {
+	position:fixed !important;
+	z-index: 100;
+	width: 100%;
+	top:0;
+	box-shadow:0 2px 4px rgba(0, 0, 0, .3);
+}
+
+/* Header styles and animations */
+
+.header-rnvi {
+	position: fixed;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/* Individual states */
+
+.header-rnvi-large {
+	height: 55px;
+	@media ( min-width : 768px ) {
+		height: 100px;
+	}
+	.header-rnvi-box{
+		margin: 0;
+		@media ( min-width : 768px ) {
+			margin: 20px 0 0;
+		}
+	}
+}
+
+.header-rnvi-hide {
+	margin-top: -60px;
+	@media ( min-width : 768px ) {
+		margin-top: -100px;
+	}
+	.header-rnvi-box{
+		margin: 0px 0 0 0;
+		@media ( min-width : 768px ) {
+			margin: 20px 0 0 0;
+		}
+	}
+	.nav-collapse{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
