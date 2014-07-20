@@ -1,7 +1,0 @@
-/**
- * Placeholder Text Input
- */
-@mixin input-placeholder {
-	&:-moz-placeholder { @content; }
-	&::-webkit-input-placeholder { @content; }
-}
